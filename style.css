@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0c2621; /* Warna hijau gelap mirip di gambar */
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Biar ukurannya pas kaya di layar HP */
+    text-align: center;
+}
+
+.profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #1f3a35;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.username {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.bio {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.link-btn {
+    display: block;
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid #57a78e;
+    /* Efek bayangan tebal ala Linktree di gambar */
+    box-shadow: 4px 4px 0px #57a78e; 
+    transition: all 0.1s ease-in-out;
+}
+
+/* Efek pas tombolnya ditekan */
+.link-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #57a78e;
+}
